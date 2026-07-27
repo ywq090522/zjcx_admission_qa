@@ -1,1 +1,1 @@
-# customer_service_platform
+# zjcx-admission-qa
