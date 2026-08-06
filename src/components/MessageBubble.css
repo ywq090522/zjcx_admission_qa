@@ -1,0 +1,29 @@
+.message-row {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.message-row.user {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.message-row.assistant {
+  justify-content: flex-start;
+}
+
+.bubble {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+
+.message-row.assistant .bubble {
+  background-color: var(--ctp-surface0);
+  color: var(--ctp-text);
+}
+
+.message-row.user .bubble {
+  background-color: var(--ctp-blue);
+  color: var(--ctp-base);
+}
