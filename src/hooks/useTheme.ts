@@ -20,10 +20,10 @@ function useTheme() {
 
   // 切换主题
   const toggleTheme = () => {
-    return setTheme(prev => prev === "dark" ? "light" : "dark")
+    setTheme(prev => prev === "dark" ? "light" : "dark")
   }
 
-  return {theme, setTheme, toggleTheme}
+  return { theme, toggleTheme }
 }
 
 export default useTheme
