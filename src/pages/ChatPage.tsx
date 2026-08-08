@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { MessageBubble, ChatInput } from '@/components'
-import './ChatPage.css'
+import styles from './ChatPage.module.css'
 
 interface Message {
   id: string
@@ -19,8 +19,8 @@ function ChatPage() {
   }
 
   return (
-    <div className='chat-page'>
-      <div className='message-list'>
+    <div className={styles.chatPage}>
+      <div className={styles.messageList}>
         {
           messages.map(
             ({ id, role, content }) => (

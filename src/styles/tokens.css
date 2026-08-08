@@ -1,0 +1,24 @@
+:root {
+  --ctp-base: #eff1f5;
+  --ctp-surface0: #ccd0da;
+  --ctp-blue: #1e66f5;
+  --ctp-text: #4c4f69;
+  --transition-speed: 0.3s;
+
+  --surface: var(--ctp-surface0);
+  --color-primary: var(--ctp-blue);
+  --bg: var(--ctp-base);
+  --text: var(--ctp-text);
+}
+
+[data-theme="dark"] {
+  --ctp-base: #1e1e2e;
+  --ctp-surface0: #313244;
+  --ctp-blue: #89b4fa;
+  --ctp-text: #cdd6f4;
+}
+
+#root {
+  transition: background-color var(--transition-speed) ease,
+    color var(--transition-speed) ease;
+}

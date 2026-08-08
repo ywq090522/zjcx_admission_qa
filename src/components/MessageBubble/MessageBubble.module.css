@@ -1,14 +1,14 @@
-.message-row {
+.messageRow {
   display: flex;
   margin-bottom: 8px;
 }
 
-.message-row.user {
+.messageRow.user {
   justify-content: flex-end;
   text-align: right;
 }
 
-.message-row.assistant {
+.messageRow.assistant {
   justify-content: flex-start;
 }
 
@@ -18,12 +18,12 @@
   border-radius: 12px;
 }
 
-.message-row.assistant .bubble {
+.messageRow.assistant .bubble {
   background-color: var(--ctp-surface0);
   color: var(--ctp-text);
 }
 
-.message-row.user .bubble {
+.messageRow.user .bubble {
   background-color: var(--ctp-blue);
   color: var(--ctp-base);
 }

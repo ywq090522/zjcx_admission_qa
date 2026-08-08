@@ -1,15 +1,15 @@
 import { useTheme } from "@/hooks";
 import { Sun, Moon } from "lucide-react";
-import './ThemeToggle.css'
+import styles from './ThemeToggle.module.css'
 
 function ThemeToggle() {
   const { theme, toggleTheme } = useTheme()
   const isDark = theme === "dark"
 
   return (
-    <button 
+    <button
       onClick={toggleTheme}
-      className="theme-toggle"
+      className={styles.themeToggle}
     >
       {isDark ? <Sun /> : <Moon />}
     </button>

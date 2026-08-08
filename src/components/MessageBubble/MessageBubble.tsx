@@ -1,4 +1,4 @@
-import './MessageBubble.css'
+import styles from './MessageBubble.module.css'
 
 interface MessageBubbleProps {
   role: 'user' | 'assistant'
@@ -7,8 +7,8 @@ interface MessageBubbleProps {
 
 function MessageBubble({ role, content }: MessageBubbleProps) {
   return (
-    <div className={`message-row ${role}`}>
-      <div className='bubble'>
+    <div className={`${styles.messageRow} ${styles[role]}`}>
+      <div className={styles.bubble}>
         <p>{role}</p>
         <p>{content}</p>
       </div>
