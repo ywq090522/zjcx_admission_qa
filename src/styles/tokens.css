@@ -1,3 +1,7 @@
+/*
+  NOTE：修改配色时，记得同步更新 index.html 中的硬编码值
+*/
+
 :root {
   --ctp-base: #eff1f5;
   --ctp-surface0: #ccd0da;

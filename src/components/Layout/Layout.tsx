@@ -1,5 +1,5 @@
-import { ThemeToggle } from "@/components"
 import styles from './Layout.module.css'
+import { Header } from '@/components'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -7,15 +7,10 @@ interface LayoutProps {
 
 function Layout({ children }: LayoutProps) {
   return (
-    <>
-      <header>
-        <ThemeToggle />
-      </header>
+    <div className={styles.layout}>
+      <Header />
       {children}
-      <footer>
-        <span className={styles.tips}>内容由 AI 生成, AI 也会犯错, 请仔细甄别。</span>
-      </footer>
-    </>
+    </div>
   )
 }
 

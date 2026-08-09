@@ -1,7 +1,4 @@
-/*
-  NOTE：修改配色时，记得同步更新 index.html 中的硬编码值
-*/
-@import 'normalize.css';
+@import url('./reset.css');
 @import url('./tokens.css');
 
 html,
@@ -11,6 +8,6 @@ body,
   color: var(--text);
   height: 100%;
   min-height: 100vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'MiSans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
 }

@@ -1,4 +1,4 @@
-import ChatPage from '@/pages/ChatPage'
+import ChatPage from '@/pages/ChatPage/ChatPage.tsx'
 import { Layout } from '@/components'
 
 function App() {

@@ -9,21 +9,30 @@ function ChatInput({ onSend }: ChatInputProps) {
   const [text, setText] = useState('')
 
   const handleSend = () => {
-    if (text.trim() === '') return
     onSend(text)
     setText('')
   }
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault()
+      handleSend()
+    }
+  }
+
   return (
     <div>
-      <input
+      <textarea
         className={styles.input}
         value={text}
         onChange={(e) => setText(e.target.value)}
+        placeholder="请输入问题..."
+        onKeyDown={handleKeyDown}
       />
       <button
         onClick={handleSend}
         className={styles.seedButton}
+        disabled={!text.trim()}
       >
         发送
       </button>

@@ -9,7 +9,6 @@ function MessageBubble({ role, content }: MessageBubbleProps) {
   return (
     <div className={`${styles.messageRow} ${styles[role]}`}>
       <div className={styles.bubble}>
-        <p>{role}</p>
         <p>{content}</p>
       </div>
     </div>
