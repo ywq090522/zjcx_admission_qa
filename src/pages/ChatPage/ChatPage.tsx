@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { MessageBubble, ChatInput } from '@/components'
-import styles from './ChatPage.module.css'
+import styles from './ChatPage.module.scss'
 
 interface Message {
   id: string

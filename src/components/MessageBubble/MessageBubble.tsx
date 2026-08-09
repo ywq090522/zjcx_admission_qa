@@ -1,4 +1,4 @@
-import styles from './MessageBubble.module.css'
+import styles from './MessageBubble.module.scss'
 
 interface MessageBubbleProps {
   role: 'user' | 'assistant'

@@ -1,4 +1,4 @@
-import styles from './MessageList.module.css'
+import styles from './MessageList.module.scss'
 
 function MessageList() {
   return (

@@ -1,5 +1,5 @@
 import { Layout } from '@/components'
-import styles from './About.module.css'
+import styles from './About.module.scss'
 
 function About() {
   return (
