@@ -1,0 +1,15 @@
+@use './variables';
+
+@mixin reset-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@mixin header-btn {
+  @include reset-btn;
+  color: var(--color-primary);
+}

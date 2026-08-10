@@ -1,11 +1,11 @@
 import ChatPage from '@/pages/ChatPage/ChatPage.tsx'
-import { Layout } from '@/components'
+import { ChatLayout } from '@/components'
 
 function App() {
   return (
-    <Layout>
+    <ChatLayout>
       <ChatPage />
-    </Layout>
+    </ChatLayout>
   )
 }
 

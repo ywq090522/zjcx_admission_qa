@@ -1,11 +1,11 @@
-import styles from './Layout.module.scss'
+import styles from './ChatLayout.module.scss'
 import { Header } from '@/components'
 
 interface LayoutProps {
   children: React.ReactNode
 }
 
-function Layout({ children }: LayoutProps) {
+function ChatLayout({ children }: LayoutProps) {
   return (
     <div className={styles.layout}>
       <Header />
@@ -14,4 +14,4 @@ function Layout({ children }: LayoutProps) {
   )
 }
 
-export default Layout
+export default ChatLayout

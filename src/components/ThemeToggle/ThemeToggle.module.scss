@@ -1,3 +1,5 @@
+@use '@/styles/mixins.scss';
+
 .themeToggle {
-  color: var(--color-primary);
+  @include mixins.header-btn;
 }

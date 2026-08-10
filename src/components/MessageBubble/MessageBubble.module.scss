@@ -5,24 +5,28 @@
 
 .messageRow.user {
   justify-content: flex-end;
+
+  .bubble {
+    background-color: var(--ctp-blue);
+    color: var(--ctp-base);
+  }
 }
 
 .messageRow.assistant {
   justify-content: flex-start;
+
+  .bubble {
+    background-color: var(--ctp-surface0);
+    color: var(--ctp-text);
+  }
 }
 
 .bubble {
   max-width: 70%;
   padding: 8px 12px;
   border-radius: 12px;
-}
 
-.messageRow.assistant .bubble {
-  background-color: var(--ctp-surface0);
-  color: var(--ctp-text);
-}
-
-.messageRow.user .bubble {
-  background-color: var(--ctp-blue);
-  color: var(--ctp-base);
+  p {
+    margin: 0;
+  }
 }
