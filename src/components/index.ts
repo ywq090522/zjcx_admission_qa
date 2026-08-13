@@ -1,6 +1,0 @@
-export { default as ChatInput } from './ChatInput'
-export { default as ChatLayout } from './ChatLayout'
-export { default as MessageBubble } from './MessageBubble'
-export { default as MessageList } from './MessageList'
-export { default as ThemeToggle } from './ThemeToggle'
-export { default as Header } from './Header'
