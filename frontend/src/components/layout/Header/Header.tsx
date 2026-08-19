@@ -1,16 +1,15 @@
-import { ThemeToggle } from "@/components";
+import { ThemeToggle, MenuButton } from '@/components'
+import type { HeaderProps } from '@/types/Header'
 import styles from './Header.module.scss'
 
-function Header() {
+function Header({ title = '新对话', onToggleSidebar }: HeaderProps) {
   return (
     <header className={styles.header}>
-      <div className="left">
-        {/* TODO: 侧边栏按钮 */}
-      </div>
-      <div className="mid"></div>
-      <div className="right">
-        <ThemeToggle />
-      </div>
+      <MenuButton
+        onToggleSidebar={onToggleSidebar}
+      />
+      {title}
+      <ThemeToggle />
     </header>
   )
 }

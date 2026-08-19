@@ -1,6 +1,6 @@
 @use './variables';
 
-@mixin reset-btn {
+@mixin clear-btn {
   border: none;
   background: transparent;
   padding: 0;
@@ -13,7 +13,7 @@
   }
 }
 
-@mixin header-btn {
-  @include reset-btn;
+@mixin btn {
+  @include clear-btn;
   color: var(--color-primary);
 }

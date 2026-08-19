@@ -6,8 +6,8 @@
     justify-content: flex-end;
 
     .bubble {
-      background-color: var(--ctp-blue);
-      color: var(--ctp-base);
+      background-color: var(--bubble-user-bg);
+      color: var(--bubble-user-text);
     }
   }
 
@@ -15,8 +15,8 @@
     justify-content: flex-start;
 
     .bubble {
-      background-color: var(--ctp-surface0);
-      color: var(--ctp-text);
+      background-color: var(--bubble-assistant-bg);
+      color: var(--bubble-assistant-text);
     }
   }
 }
@@ -24,9 +24,11 @@
 .bubble {
   max-width: 70%;
   padding: 8px 12px;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
 
   p {
     margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }

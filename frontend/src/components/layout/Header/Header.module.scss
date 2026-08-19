@@ -1,5 +1,21 @@
 @use '@styles/variables' as vars;
 
 .header {
-  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: var(--header-height);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid;
+  border-color: var(--border-color);
+  background-color: var(--bg-primary);
+
+  @supports (backdrop-filter: blur(20px)) or (-webkit-backdrop-filter: blur(20px)) {
+    background-color: rgba(var(--bg-primary), 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
 }
