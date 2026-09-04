@@ -26,3 +26,14 @@ dist-ssr
 .context-index
 
 backend/*
+
+.env
+.env.local
+.env.production
+
+CLAUDE.md
+AGENTS.md
+AGENT.md
+.claude/*
+.codex/*
+.agents/*
