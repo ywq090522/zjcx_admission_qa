@@ -1,6 +1,11 @@
 {
   "name": "zjcx_admission_qa",
-  "private": true,
+  "author": {
+    "name": "Yu Wenqiang",
+    "email": "ywq09522@gmail.com",
+    "url": "https://github.com/ywq090522"
+  },
+  "license": "MIT",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
