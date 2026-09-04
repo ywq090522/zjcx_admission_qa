@@ -1,3 +1,124 @@
 @use '@styles/variables' as vars;
 @use '@styles/mixins' as mix;
 
+.chatInput {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  padding-bottom: 1.2rem;
+  background: transparent;
+
+  @media (min-width: 640px) {
+    padding: 16px;
+  }
+
+  .inputWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    background: var(--input-bg);
+    transition: border-color var(--transition-speed) var(--transition-timing),
+      box-shadow var(--transition-speed) var(--transition-timing);
+
+    &:focus-within {
+      border-color: var(--border-focus);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .inputField {
+      flex: 1;
+      min-width: 0;
+      max-height: 160px;
+      padding: 4px;
+      border: 0;
+      outline: 0;
+      resize: none;
+      overflow-y: auto;
+      color: var(--text-primary);
+      background: transparent;
+      font: inherit;
+      line-height: 1.5;
+      cursor: text;
+      caret-color: var(--ctp-rosewater);
+      outline: none;
+
+      &::placeholder {
+        color: var(--text-tertiary);
+      }
+
+      &::selection {
+        background-color: var(--ctp-mauve);
+        color: var(--textarea-selection-text);
+      }
+    }
+
+    .clearInput {
+      cursor: text;
+      -webkit-tap-highlight-color: transparent;
+
+      &:-moz-focusring {
+        outline: none;
+      }
+    }
+
+    .wordCount {
+      align-self: center;
+      // padding-bottom: 4px;
+      color: var(--text-tertiary);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .success {
+      color: var(--color-success);
+    }
+
+    .warning {
+      color: var(--color-warning);
+    }
+
+    .error {
+      color: var(--color-error);
+    }
+
+    .none {
+      display: none
+    }
+
+    .seedButton {
+      @include mix.btn;
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: var(--input-seedButton-color);
+      background: var(--input-seedButton-bg);
+      transition: background-color var(--transition-speed) var(--transition-timing),
+        opacity var(--transition-speed) var(--transition-timing);
+
+      &:hover:not(:disabled) {
+        background: var(--input-seedButton-bg-hover);
+      }
+
+      &:active:not(:disabled) {
+        background: var(--input-seedButton-bg-active);
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        background: var(--input-seedButton-bg-disable);
+      }
+    }
+  }
+}

@@ -1,4 +1,7 @@
 @use './variables' as vars;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html,
 body,
