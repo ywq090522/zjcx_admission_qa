@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { MessageBubble, ChatInput } from '@/features/chat/components';
-import ChatLayout from './ChatLayout.tsx'
-import styles from './index.module.scss'
+import styles from './HomePage.module.scss'
 
 interface Message {
   id: string
@@ -18,9 +17,8 @@ function HomePage() {
   function handleSend(content: string) {
     setMessages([...messages, { id: Date.now().toString(), role: 'user', content }])
   }
-
   return (
-    <ChatLayout>
+    <>
       <div className={styles.chatPage}>
         <div className={styles.messageList}>
           {
@@ -34,10 +32,11 @@ function HomePage() {
               ))
           }
         </div>
-
-        <ChatInput onSend={handleSend} />
+        <ChatInput
+          onSend={handleSend}
+        />
       </div>
-    </ChatLayout>
+    </>
   )
 }
 

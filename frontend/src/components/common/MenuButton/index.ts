@@ -1,1 +1,2 @@
-export { default as MenuButton } from './MenuButton.tsx'
+export { default } from './MenuButton'
+export type { MenuButtonProps } from './MenuButton'

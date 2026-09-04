@@ -1,15 +1,14 @@
 import { Menu } from 'lucide-react'
 import styles from './MenuButton.module.scss'
 
-interface MenuButtonProps {
-  className?: string
+export interface MenuButtonProps {
   onToggleSidebar: () => void
 }
 
-function MenuButton({ className, onToggleSidebar }: MenuButtonProps) {
+function MenuButton({ onToggleSidebar }: MenuButtonProps) {
   return (
     <button
-      className={`${styles.MenuButton} ${className}`}
+      className={`${styles.MenuButton}`}
       onClick={onToggleSidebar}
     >
       <Menu />
